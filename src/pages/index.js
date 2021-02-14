@@ -1,22 +1,36 @@
 import React from "react"
-import { Link } from "gatsby"
+import { context } from "@reatom/react"
+import CssBaseline from "@material-ui/core/CssBaseline"
+import Typograpy from "@material-ui/core/Typography"
+import { ThemeProvider } from "@material-ui/core/styles"
+import "fontsource-roboto"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import theme from '../theme'
+import { store } from "../store"
+import Layout from "../components/Layout"
+import SEO from "../components/Seo"
+import BaseColors from "../components/BaseColors"
+import Colors from "../components/Colors"
+import CurrentColor from "../components/CurrentColor"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+  <context.Provider value={store}>
+    <CssBaseline />
+    <ThemeProvider theme={theme}>
+      <Layout>
+        <SEO title="SAP ALV COLORS" />
+        <Typograpy variant="h3" component="h3">
+          Shades
+        </Typograpy>
+        <BaseColors />
+        <Typograpy variant="h3" component="h3">
+          Colors
+        </Typograpy>
+        <Colors />
+        <CurrentColor />
+      </Layout>
+    </ThemeProvider>
+  </context.Provider>
 )
 
 export default IndexPage

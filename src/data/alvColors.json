@@ -1,0 +1,175 @@
+[{
+    "col": 0,
+    "int": 0,
+    "inv": 0,
+    "backgroundColor": "#DFEBF5",
+    "textColor": "#000000"
+}, {
+    "col": 1,
+    "int": 0,
+    "inv": 0,
+    "backgroundColor": "#C5EAEE",
+    "textColor": "#000000"
+}, {
+    "col": 1,
+    "int": 0,
+    "inv": 1,
+    "backgroundColor": "#E9F1F5",
+    "textColor": "#A6E4F4"
+}, {
+    "col": 1,
+    "int": 1,
+    "inv": 0,
+    "backgroundColor": "#A6E4F4",
+    "textColor": "#000000"
+}, {
+    "col": 1,
+    "int": 1,
+    "inv": 1,
+    "backgroundColor": "#A6E4F4",
+    "textColor": "#000000"
+}, {
+    "col": 2,
+    "int": 0,
+    "inv": 0,
+    "backgroundColor": "#DFEBF5",
+    "textColor": "#000000"
+}, {
+    "col": 2,
+    "int": 0,
+    "inv": 1,
+    "backgroundColor": "#E9F1F5",
+    "textColor": "#D4DFEE"
+}, {
+    "col": 2,
+    "int": 1,
+    "inv": 0,
+    "backgroundColor": "#D4DFEE",
+    "textColor": "#000000"
+}, {
+    "col": 2,
+    "int": 1,
+    "inv": 1,
+    "backgroundColor": "#D4DFEE",
+    "textColor": "#000000"
+}, {
+    "col": 3,
+    "int": 0,
+    "inv": 0,
+    "backgroundColor": "#FFFDBF",
+    "textColor": "#000000"
+}, {
+    "col": 3,
+    "int": 0,
+    "inv": 1,
+    "backgroundColor": "#E9F1F5",
+    "textColor": "#FFF742"
+}, {
+    "col": 3,
+    "int": 1,
+    "inv": 0,
+    "backgroundColor": "#FFF742",
+    "textColor": "#000000"
+}, {
+    "col": 3,
+    "int": 1,
+    "inv": 1,
+    "backgroundColor": "#FFF742",
+    "textColor": "#000000"
+}, {
+    "col": 4,
+    "int": 0,
+    "inv": 0,
+    "backgroundColor": "#CCE3E3",
+    "textColor": "#000000"
+}, {
+    "col": 4,
+    "int": 0,
+    "inv": 1,
+    "backgroundColor": "#E9F1F5",
+    "textColor": "#A6E4F4"
+}, {
+    "col": 4,
+    "int": 1,
+    "inv": 0,
+    "backgroundColor": "#A6E4F4",
+    "textColor": "#000000"
+}, {
+    "col": 4,
+    "int": 1,
+    "inv": 1,
+    "backgroundColor": "#A6E4F4",
+    "textColor": "#000000"
+}, {
+    "col": 5,
+    "int": 0,
+    "inv": 0,
+    "backgroundColor": "#C5FAC1",
+    "textColor": "#000000"
+}, {
+    "col": 5,
+    "int": 0,
+    "inv": 1,
+    "backgroundColor": "#E9F1F5",
+    "textColor": "#94D88F"
+}, {
+    "col": 5,
+    "int": 1,
+    "inv": 0,
+    "backgroundColor": "#94D88F",
+    "textColor": "#000000"
+}, {
+    "col": 5,
+    "int": 1,
+    "inv": 1,
+    "backgroundColor": "#94D88F",
+    "textColor": "#000000"
+}, {
+    "col": 6,
+    "int": 0,
+    "inv": 0,
+    "backgroundColor": "#FF6758",
+    "textColor": "#000000"
+}, {
+    "col": 6,
+    "int": 0,
+    "inv": 1,
+    "backgroundColor": "#E9F1F5",
+    "textColor": "#FF6758"
+}, {
+    "col": 6,
+    "int": 1,
+    "inv": 0,
+    "backgroundColor": "#FF6758",
+    "textColor": "#000000"
+}, {
+    "col": 6,
+    "int": 1,
+    "inv": 1,
+    "backgroundColor": "#FF6758",
+    "textColor": "#000000"
+}, {
+    "col": 7,
+    "int": 0,
+    "inv": 0,
+    "backgroundColor": "#FDBC70",
+    "textColor": "#000000"
+}, {
+    "col": 7,
+    "int": 0,
+    "inv": 1,
+    "backgroundColor": "#E9F1F5",
+    "textColor": "#FDBC70"
+}, {
+    "col": 7,
+    "int": 1,
+    "inv": 0,
+    "backgroundColor": "#FDBC70",
+    "textColor": "#000000"
+}, {
+    "col": 7,
+    "int": 1,
+    "inv": 1,
+    "backgroundColor": "#FDBC70",
+    "textColor": "#000000"
+}]
