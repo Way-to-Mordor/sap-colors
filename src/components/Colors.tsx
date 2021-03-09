@@ -25,7 +25,7 @@ const Colors = () => {
   const currentColors = colors.filter(color => color.col === currentColorCol)
 
   const handleChange = useCallback(
-    (event, newColorId) => setColor(newColorId),
+    (event, newColorId) => { if ( newColorId !== null ) { setColor( newColorId) } },
     [setColor]
   )
 

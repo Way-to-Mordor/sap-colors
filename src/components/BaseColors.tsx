@@ -6,6 +6,7 @@ import makeStyles from "@material-ui/core/styles/makeStyles"
 import last from "lodash/last"
 
 import useColors from "../hooks/useColors"
+import { initial, isNull } from "lodash"
 
 const useStyles = makeStyles({
   colors: {
@@ -26,7 +27,9 @@ const BaseColors = () => {
     (event, newColorCol) => {
       const newColor = alvColors.find(color => color.col === newColorCol)
 
-      setColor(newColor.id)
+      if (newColorCol !== null ) {
+        setColor(newColor.id)
+      }
     },
     [setColor, alvColors]
   )

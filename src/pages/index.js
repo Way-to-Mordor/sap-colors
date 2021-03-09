@@ -12,6 +12,7 @@ import SEO from "../components/Seo"
 import BaseColors from "../components/BaseColors"
 import Colors from "../components/Colors"
 import CurrentColor from "../components/CurrentColor"
+import Table from "../components/Table"
 
 const IndexPage = () => (
   <context.Provider value={store}>
@@ -28,6 +29,7 @@ const IndexPage = () => (
         </Typograpy>
         <Colors />
         <CurrentColor />
+        <Table />
       </Layout>
     </ThemeProvider>
   </context.Provider>
