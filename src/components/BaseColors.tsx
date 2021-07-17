@@ -1,55 +1,55 @@
-import React, { useCallback } from "react"
-import groupBy from "lodash/groupBy"
-import ToggleButtonGroup from "@material-ui/lab/ToggleButtonGroup"
-import ToggleButton from "@material-ui/lab/ToggleButton"
-import makeStyles from "@material-ui/core/styles/makeStyles"
-import last from "lodash/last"
+import React, { useCallback } from 'react';
+import groupBy from 'lodash/groupBy';
+import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
+import ToggleButton from '@material-ui/lab/ToggleButton';
+import makeStyles from '@material-ui/core/styles/makeStyles';
+import last from 'lodash/last';
+import isNil from 'lodash/isNil';
 
-import useColors from "../hooks/useColors"
-import { initial, isNull } from "lodash"
+import useColors from '../hooks/useColors';
 
 const useStyles = makeStyles({
   colors: {
-    width: "100%",
+    width: '100%',
   },
   color: {
     padding: 0,
-    width: "100%",
+    width: '100%',
     height: 40,
   },
-})
+});
 
-const BaseColors = () => {
-  const { colors: alvColors, colorId, setColor } = useColors()
-  const colors = groupBy(alvColors, "col")
+const BaseColors = (): React.ReactElement => {
+  const { colors: alvColors, colorId: currentColorId, setColor } = useColors();
+  const colors = groupBy(alvColors, 'col');
 
   const handleColorChange = useCallback(
     (event, newColorCol) => {
-      const newColor = alvColors.find(color => color.col === newColorCol)
+      const newColor = alvColors.find((color) => color.col === newColorCol);
 
-      if (newColorCol !== null ) {
-        setColor(newColor.id)
+      if (!isNil(newColorCol) && newColor) {
+        setColor(newColor.id);
       }
     },
-    [setColor, alvColors]
-  )
+    [setColor, alvColors],
+  );
 
-  const currentColor = alvColors.find(color => color.id === colorId)
+  const currentColor = alvColors.find((color) => color.id === currentColorId);
 
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <ToggleButtonGroup
-      value={currentColor.col}
+      value={currentColor?.col}
       onChange={handleColorChange}
       exclusive
       className={classes.colors}
       size="large"
     >
-      {Object.keys(colors).map(colorId => {
-        const mainColor = last(colors[colorId])
+      {Object.keys(colors).map((colorId) => {
+        const mainColor = last(colors[colorId]);
 
-        return (
+        return mainColor ? (
           <ToggleButton
             key={mainColor.col}
             value={mainColor.col}
@@ -64,10 +64,10 @@ const BaseColors = () => {
               A
             </span>
           </ToggleButton>
-        )
+        ) : null;
       })}
     </ToggleButtonGroup>
-  )
-}
+  );
+};
 
-export default BaseColors
+export default BaseColors;

@@ -1,18 +1,18 @@
-import React from "react"
-import { context } from "@reatom/react"
-import CssBaseline from "@material-ui/core/CssBaseline"
-import Typograpy from "@material-ui/core/Typography"
-import { ThemeProvider } from "@material-ui/core/styles"
-import "fontsource-roboto"
+import React from 'react';
+import { context } from '@reatom/react';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Typograpy from '@material-ui/core/Typography';
+import { ThemeProvider } from '@material-ui/core/styles';
+import 'fontsource-roboto';
 
-import theme from '../theme'
-import { store } from "../store"
-import Layout from "../components/Layout"
-import SEO from "../components/Seo"
-import BaseColors from "../components/BaseColors"
-import Colors from "../components/Colors"
-import CurrentColor from "../components/CurrentColor"
-import Table from "../components/Table"
+import ExampleTable from './components/ExampleTable';
+import theme from '../theme';
+import { store } from '../store';
+import Layout from '../components/Layout';
+import SEO from '../components/Seo';
+import BaseColors from '../components/BaseColors';
+import Colors from '../components/Colors';
+import CurrentColor from '../components/CurrentColor';
 
 const IndexPage = () => (
   <context.Provider value={store}>
@@ -29,10 +29,10 @@ const IndexPage = () => (
         </Typograpy>
         <Colors />
         <CurrentColor />
-        <Table />
+        <ExampleTable />
       </Layout>
     </ThemeProvider>
   </context.Provider>
-)
+);
 
-export default IndexPage
+export default IndexPage;
